@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+  <div class="contact-container">
+    <form class="main-container">
+        <h2>Contact Us</h2>
+        
+      <div class="name-container">
+        <div class="input-container">
+        <label for="firstName">First Name <span class="must-icon">*</span></label>
+        <input type="text" id="firstName" name="firstName" >
+        </div>
+
+        <div class="input-container">
+          <label for="lastName">Last Name <span class="must-icon">*</span></label>
+          <input type="text" id="lastName" name="lastName" >
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="email">Email Address <span class="must-icon">*</span></label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="input-container">
+        <label>Query Type <span class="must-icon">*</span></label>
+        <div class="radio-section">
+        <div class="radio-option">
+        <input type="radio" id="general_enquiry" name="general_enquiry" value="General Enquiry">
+        <label for="general_enquiry" class="radio-label">General Enquiry</label>
+        </div>
+        <div class="radio-option">
+        <input type="radio" id="support_request" name="support_request" value="Support Request">
+        <label for="support_request" class="radio-label">Support Request</label>
+        </div>
+        </div>
+      </div>
+
+      <div class="message input-container">
+        <label for="message">Message <span class="must-icon">*</span></label>
+        <textarea name="message" name="message" rows="5" cols="20">
+        </textarea>
+      </div>
+      
+      <div class="consent-checkbox">
+      <input type="checkbox" id="consent" name="consent" value="consent">
+      <label for="consent">I consent to being contacted by the team <span>*</span></label>
+      </div>
+
+      <input type="button" class="submit-btn" value="Submit">
+
+    </form>
+
+   
+
+  </div>
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  </footer>
+  </div>
+</body>
+</html>

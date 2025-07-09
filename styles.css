@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(169, 82%, 27%);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact-container{
+    background-color: hsl(0,0%,100%);
+    padding:1.5rem;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+.name-container,.radio-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.radio-option, input, textarea{
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid hsl(169, 82%, 27%);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-label{
+    font-weight: 700;
+}
+
+.submit-btn{
+    background-color: hsl(169, 82%, 27%);
+    font-weight: 700;
+    color: hsl(0,0%,100%);
+    border: none;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.consent-checkbox label{
+    font-weight: 700;
+}
+.consent-checkbox input[type=checkbox]{
+    color: hsl(169, 82%, 27%);
+}
+
+footer{
+    display: flex;
+    align-content: end;
+}
+
