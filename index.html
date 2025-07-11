@@ -16,58 +16,65 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div>
+  <div class="container">
   <div class="contact-container">
-    <form class="main-container">
+    <form class="form" id="contact-form">
         <h2>Contact Us</h2>
         
       <div class="name-container">
-        <div class="input-container">
-        <label for="firstName">First Name <span class="must-icon">*</span></label>
+        <div class="input-container form-control">
+        <label for="firstName" class="text">First Name <span class="must-icon">*</span></label>
         <input type="text" id="firstName" name="firstName" >
+        <small>Error message</small>
         </div>
 
-        <div class="input-container">
-          <label for="lastName">Last Name <span class="must-icon">*</span></label>
+        <div class="input-container form-control">
+          <label for="lastName" class="text">Last Name <span class="must-icon">*</span></label>
           <input type="text" id="lastName" name="lastName" >
+          <small>Error message</small>
         </div>
       </div>
-      <div class="input-container">
-        <label for="email">Email Address <span class="must-icon">*</span></label>
+      <div class="input-container form-control">
+        <label for="email" class="text">Email Address <span class="must-icon">*</span></label>
         <input type="email" id="email" name="email">
+        <small>Error message</small>
       </div>
 
-      <div class="input-container">
-        <label>Query Type <span class="must-icon">*</span></label>
+      <div class="input-container radio-container">
+        <label class="text">Query Type <span class="must-icon">*</span></label>
         <div class="radio-section">
-        <div class="radio-option">
-        <input type="radio" id="general_enquiry" name="general_enquiry" value="General Enquiry">
+
+        <div class="radio-option form-control">
+        <input type="radio" id="general_enquiry" name="query_type" value="General Enquiry">
         <label for="general_enquiry" class="radio-label">General Enquiry</label>
         </div>
-        <div class="radio-option">
-        <input type="radio" id="support_request" name="support_request" value="Support Request">
+
+        <div class="radio-option form-control">
+        <input type="radio" id="support_request" name="query_type" value="Support Request">
         <label for="support_request" class="radio-label">Support Request</label>
         </div>
         </div>
+        
+        <small>Error message</small>
       </div>
 
-      <div class="message input-container">
-        <label for="message">Message <span class="must-icon">*</span></label>
-        <textarea name="message" name="message" rows="5" cols="20">
+      <div class="message input-container form-control">
+        <label for="message" class="text">Message <span class="must-icon">*</span></label>
+        <textarea name="message" id="message" rows="5" cols="20">
         </textarea>
+        <small>Error message</small>
       </div>
       
-      <div class="consent-checkbox">
+      <div class="consent-checkbox form-control">
+      <div class="checkbox-container">
       <input type="checkbox" id="consent" name="consent" value="consent">
       <label for="consent">I consent to being contacted by the team <span>*</span></label>
       </div>
+      <small>Error message</small>
+      </div>
 
-      <input type="button" class="submit-btn" value="Submit">
-
+      <button>Submit</button>
     </form>
-
-   
-
   </div>
   <footer>
   <div class="attribution">
@@ -76,5 +83,6 @@
   </div>
   </footer>
   </div>
+  <script src="/script.js"></script>
 </body>
 </html>
