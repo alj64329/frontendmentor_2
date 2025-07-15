@@ -87,7 +87,7 @@ h2{
 .radio-option, input, textarea{
     resize: none;
     border-radius: 6px;
-    border: 1px solid hsl(169, 82%, 27%);
+    border: 1px solid hsl(186, 15%, 59%);
 }
 
 input{
@@ -98,6 +98,16 @@ input[type="radio"],
 input[type="checkbox"] {
   vertical-align: middle;
   margin-right: 0.5rem; /* optional: spacing between input and label text */
+  color: hsl(186, 15%, 59%);
+}
+
+.radio-option:has(input:focus){
+    border:2px solid hsl(169, 82%, 27%);
+    background-color: hsl(148, 38%, 91%);
+}
+
+input[type="radio"]:focus{
+    color: hsl(169, 82%, 27%);
 }
 
 
@@ -134,8 +144,11 @@ button:hover{
     background-color:#063f36;
 }
 
-input:hover{
-    border: 1px solid hsl(169, 82%, 27%);
+input[type="text"]:hover, textarea:hover{
+    border: 2px solid hsl(169, 82%, 27%) !important;
+}
+input[type="text"]:focus, textarea:focus{
+    border: 2px solid hsl(169, 82%, 27%) !important;
 }
 
 .consent-checkbox label{
@@ -149,7 +162,7 @@ footer{
     display: flex;
     align-content: end;
 }
-@media screen and (max-width:770px) {
+@media screen and (max-width:886px) {
     .container{
         width: 100%;
     }
