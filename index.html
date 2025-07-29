@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <div class="contact-container">
+
+    <!-- <div class="success-message" id="success-msg">
+      <div>
+      <img src="./assets/images/icon-success-check.svg" alt="success-ico">
+      <div class="header-message">Message Sent!</div>
+      </div>
+      <p class="success-text">Thanks for completing the form. We'll be in touch soon!</p>
+    </div> -->
+
+    <form class="form" id="contact-form">
+        <h2>Contact Us</h2>
+        
+      <div class="name-container">
+        <div class="input-container form-control">
+        <label for="firstName" class="text">First Name <span class="must-icon">*</span></label>
+        <input type="text" id="firstName" name="firstName" >
+        <small>Error message</small>
+        </div>
+
+        <div class="input-container form-control">
+          <label for="lastName" class="text">Last Name <span class="must-icon">*</span></label>
+          <input type="text" id="lastName" name="lastName" >
+          <small>Error message</small>
+        </div>
+      </div>
+      <div class="input-container form-control">
+        <label for="email" class="text">Email Address <span class="must-icon">*</span></label>
+        <input type="email" id="email" name="email">
+        <small>Error message</small>
+      </div>
+
+      <div class="input-container radio-container">
+        <div class="text">Query Type <span class="must-icon">*</span></div>
+        <div class="radio-section">
+
+        <div class="radio-option form-control">
+        <input type="radio" id="general_enquiry" name="query_type" value="General Enquiry">
+        <label for="general_enquiry" class="radio-label">General Enquiry</label>
+        </div>
+
+        <div class="radio-option form-control">
+        <input type="radio" id="support_request" name="query_type" value="Support Request">
+        <label for="support_request" class="radio-label">Support Request</label>
+        </div>
+        </div>
+        
+        <small>Error message</small>
+      </div>
+
+      <div class="message input-container form-control">
+        <label for="message" class="text">Message <span class="must-icon">*</span></label>
+        <textarea name="message" id="message" rows="5" cols="20">
+        </textarea>
+        <small>Error message</small>
+      </div>
+      
+      <div class="consent-checkbox form-control">
+      <div class="checkbox-container">
+      <input type="checkbox" id="consent" name="consent" value="consent">
+      <label for="consent">I consent to being contacted by the team <span>*</span></label>
+      </div>
+      <small>Error message</small>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </div>
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  </footer>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
